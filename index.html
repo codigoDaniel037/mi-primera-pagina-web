@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Pagina </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- nav bar------------------------------------------------------- -->
+    <div class="nav-bar">
+        <div class="lista">
+            <ol class="lista-navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./recursos/logo.png" alt="logo" id="logo">
+                    </a>
+                </div>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#clases">Clases</a></li>
+                <li><a href="#sobre-mi">Sobre Mi </a></li>
+            </ol>
+        </div>
+    </div>
+    <!-- contenido ---------------------------------------------------- -->
+
+    <!-- sobre mi *--------- -->
+    <div class="contenedor" id="sobre-mi">
+        <h1>Sobre Mi</h1>
+        <p>
+            <img src="./recursos/foto.png" alt="foto" id="foto">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, 
+            venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus 
+            elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, 
+            eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut
+             metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper 
+             ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper 
+             libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. 
+             Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam 
+             sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. 
+             Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+        </p>
+    </div>
+
+    <!-- clases ----------- -->
+    <div class="contenedor" id="clases">
+        <h1>Clases</h1>
+        <div id="datos-clases">
+            <ul>
+                <li>C++</li>
+                <li>HTML Y CSS</li>
+                <li>JAVA</li>
+                <li>PYTHON</li>
+                <li>ANGULAR</li>
+            </ul>
+            <table border="2" id="tabla-clases">
+                <tr>
+                    <th>TIEMPO</th>
+                    <th>COSTO</th>
+                </tr>
+                <tr>
+                    <td>30 minutos</td>
+                    <td>$xxxxx</td>
+                </tr>
+                <tr>
+                    <td>1 hora</td>
+                    <td>$xxxxx</td>
+                </tr>
+                <tr>
+                    <td>2 horas</td>
+                    <td>$xxxxx</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <!-- cursos ----------- -->
+    <div class="contenedor" id="cursos">
+        <h1>Cursos</h1>
+        <h2>Catalogo de cursos.</h2>
+        <div id="catalogo">
+
+            <div class="card">
+                <img src="./recursos/c++.jpg" alt="c++">
+                <div class="contenedor2">
+                    <h4><b>C++</b></h4>
+                    <p>
+                        Este es un curso de C++
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=lBC-Zd0Y_Y8&list=PLjGMQnJfmDinbgTT4KUba_z979mQtcdb6" target="blank">click aqui para ir al curso</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./recursos/html.jpg" alt="html">
+                <div class="contenedor2">
+                    <h4><b>C++</b></h4>
+                    <p>
+                        Este es un curso de HTML y CSS
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=ILbGZVUj7hs&list=PLjGMQnJfmDilRlZOltYfW3ZmhU1rVx6F7" target="blank">click aqui para ir al curso</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./recursos/java.png" alt="java">
+                <div class="contenedor2">
+                    <h4><b>C++</b></h4>
+                    <p>
+                        Este es un curso de JAVA
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=ZFqdc17grNo&list=PLjGMQnJfmDikA1hIYXAyfws_FP6FUPdBH" target="blank">click aqui para ir al curso</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- contacto ----------- -->
+    <div class="contenedor" id="contacto">
+        <h1>Contacto</h1>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" placeholder="Nombre" id="nombre" required>
+            <br><br>
+
+            <label for="email">email:</label>
+            <input type="email" placeholder="email" id="email">
+            <br><br>
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" placeholder="Asunto" id="asunto" required>
+            <br><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+    </div>
+
+    <!--   footer --------------------------------------------------------- -->
+    <div class="footer">
+        <p>Autor: CodigoDaniel037</p>
+        <a href="https://www.facebook.com/daniel037s" target="blank">
+            <img src="./recursos/face.png" alt="logo-facebook">
+        </a>
+        <a href="https://www.instagram.com/13daniel037/" target="blank">
+            <img src="./recursos/instagram.png" alt="logo-instagram">
+        </a>
+        <a href="https://www.youtube.com/channel/UC8hEZhq8wDT0L9hN-lyrz3Q" target="blank">
+            <img src="./recursos/youtube.png" alt="logo-youtube">
+        </a>
+        <a href="https://www.twitch.tv/daiki037" target="blank">
+            <img src="./recursos/twitch.png" alt="logo-twitch">
+        </a>
+        <br><br>
+    </div>
+</body>
+</html>
